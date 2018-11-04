@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Submit test message</h2>
+
+<form action="~/Home/sendMessage" method="post" id="form1">
+    <table>
+        <tr>
+            <td>Message text:</td>
+            <td><input type="text" name="messageText" /></td>
+        </tr>
+        <tr>
+            <td>Include test data:</td>
+            <td><input type="checkbox" name="includeData" value="true" /></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right">
+                <button type="submit" form="form1" style="width:80px;height:25px;">Submit</button>
+            </td>
+        </tr>
+    </table>
+</form>
